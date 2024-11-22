@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>In Your Dream - Bengkalis Yana</title>
+    <title>In Your Dream - Kabupaten Bengkalis</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
