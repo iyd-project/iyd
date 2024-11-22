@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>In Your Dream | Sistem Reservasi In Your Dream Bengkalis Indonesia Jayapura</title>
+    <title>In Your Dream | Sistem Reservasi In Your Dream</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
