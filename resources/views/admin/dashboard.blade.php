@@ -173,7 +173,6 @@
                             <a href="#">
                                 <i class="fas fa-home"></i>
                                 <p>Dashboard</p>
-                                <span class="badge badge-count">5</span>
                             </a>
                         </li>
                         <li class="nav-section">
@@ -237,7 +236,7 @@
                                         </div>
                                         <div class="col col-stats ml-3 ml-sm-0">
                                             <div class="numbers">
-                                                <p class="card-category">Visitors</p>
+                                                <p class="card-category">Users</p>
                                                 <h4 class="card-title">1,294</h4>
                                             </div>
                                         </div>
@@ -256,7 +255,7 @@
                                         </div>
                                         <div class="col col-stats ml-3 ml-sm-0">
                                             <div class="numbers">
-                                                <p class="card-category">Subscribers</p>
+                                                <p class="card-category">Reservations</p>
                                                 <h4 class="card-title">1303</h4>
                                             </div>
                                         </div>
@@ -275,7 +274,7 @@
                                         </div>
                                         <div class="col col-stats ml-3 ml-sm-0">
                                             <div class="numbers">
-                                                <p class="card-category">Sales</p>
+                                                <p class="card-category">Gallery</p>
                                                 <h4 class="card-title">$ 1,345</h4>
                                             </div>
                                         </div>
@@ -294,7 +293,7 @@
                                         </div>
                                         <div class="col col-stats ml-3 ml-sm-0">
                                             <div class="numbers">
-                                                <p class="card-category">Order</p>
+                                                <p class="card-category">Packages</p>
                                                 <h4 class="card-title">576</h4>
                                             </div>
                                         </div>

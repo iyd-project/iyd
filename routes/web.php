@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Admin\PackageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,7 @@ Route::get('/home', function () {
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard'); // Halaman admin
 })->name('admin.dashboard')->middleware('auth');
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::resource('packages', PackageController::class);
+});
