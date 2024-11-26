@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\PackageController;
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,5 @@ Route::get('/admin/dashboard', function () {
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('packages', PackageController::class);
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
