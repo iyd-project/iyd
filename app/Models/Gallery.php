@@ -5,20 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Package extends Model
+class Gallery extends Model
 {
     use HasFactory;
 
-    protected $table = 'packages';
-
     protected $fillable = [
-        'name',
-        'price',
-        'desc'
+        'package_id',
+        'image_path',
     ];
 
-    public function galleries()
+    public function package()
     {
-        return $this->hasMany(Gallery::class);
+        return $this->belongsTo(Package::class);
     }
 }
