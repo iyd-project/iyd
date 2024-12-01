@@ -122,16 +122,16 @@
         </div>
     </div>
 
-    <div class="row row-card-no-pd">
+    {{-- <div class="row row-card-no-pd">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
                     <div class="card-head-row">
                         <h4 class="card-title">Users Geolocation</h4>
-                    </div>
-                    {{-- <p class="card-category">
+                    </div> --}}
+    {{-- <p class="card-category">
                                         Map of the distribution of users around the world</p> --}}
-                </div>
+    {{-- </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
@@ -151,5 +151,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

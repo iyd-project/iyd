@@ -16,6 +16,14 @@ use App\Http\Controllers\Admin\DashboardController;
 |
 */
 
+Route::get('/', function () {
+    return view('landing-page');
+});
+
+Route::get('/pricelist', function () {
+    return view('pricelist');
+});
+
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
@@ -35,3 +43,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('packages', PackageController::class);
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
+
+Route::get('/admin/reservations', function () {
+    return view('admin.reservations.index');
+})->name('reservations.index');
+
+// Gallery
+Route::get('/admin/gallery', function () {
+    return view('admin.gallery.index');
+})->name('gallery.index');

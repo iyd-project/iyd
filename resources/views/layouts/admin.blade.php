@@ -33,7 +33,8 @@
             <!-- Logo Header -->
             <div class="logo-header">
                 <a href="#" class="logo">
-                    <img src="{{ asset('assets/img/logoazzara.svg') }}" alt="navbar brand" class="navbar-brand">
+                    {{-- <p>In Your Dream</p> --}}
+                    {{-- <img src="{{ asset('assets/img/logo.png') }}" alt=""> --}}
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
                     data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -171,9 +172,10 @@
             <div class="main-header" data-background-color="dark">
                 <!-- Logo Header -->
                 <div class="logo-header">
-                    <a href="#" class="logo">
+                    {{-- <a href="#" class="logo">
                         <img src="{{ asset('assets/img/logoazzara.svg') }}" alt="navbar brand" class="navbar-brand">
-                    </a>
+                    </a> --}}
+                    <img src="" alt="">
                     <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
                         data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
@@ -297,10 +299,35 @@
                             </div>
                         </div>
                         <ul class="nav">
-                            <li class="nav-item active">
-                                <a href="#">
+                            <!-- Dashboard Menu -->
+                            <li class="nav-item {{ request()->is('admin/dashboard') ? 'active' : '' }}">
+                                <a href="{{ route('admin.dashboard') }}">
                                     <i class="fas fa-home"></i>
                                     <p>Dashboard</p>
+                                </a>
+                            </li>
+
+                            <!-- Reservasi Menu -->
+                            <li class="nav-item {{ request()->is('admin/reservations*') ? 'active' : '' }}">
+                                <a href="{{ route('reservations.index') }}">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <p>Reservasi</p>
+                                </a>
+                            </li>
+
+                            <!-- Gallery Menu -->
+                            <li class="nav-item {{ request()->is('admin/gallery*') ? 'active' : '' }}">
+                                <a href="{{ route('gallery.index') }}">
+                                    <i class="fas fa-images"></i>
+                                    <p>Gallery</p>
+                                </a>
+                            </li>
+
+                            <!-- Packages Menu -->
+                            <li class="nav-item {{ request()->is('admin/packages*') ? 'active' : '' }}">
+                                <a href="{{ route('admin.packages.index') }}">
+                                    <i class="fas fa-box"></i>
+                                    <p>Packages</p>
                                 </a>
                             </li>
                         </ul>
