@@ -24,6 +24,10 @@ Route::get('/pricelist', function () {
     return view('pricelist');
 });
 
+Route::get('/pricelist-login', function () {
+    return view('pricelist-login');
+});
+
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
