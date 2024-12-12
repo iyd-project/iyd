@@ -80,7 +80,7 @@
                         </div>
                         <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
                             <h2 class="content-title mb-4">
-                                About USSSSS
+                                About
                                 <strong>Us</strong>
                             </h2>
                             <p class="opacity-50">
