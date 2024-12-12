@@ -32,19 +32,41 @@
 <body class="index-page">
     <header id="header" class="header d-flex align-items-center position-relative">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <!-- Logo -->
             <a href="index.html" class="logo d-flex align-items-center">
                 <img src="{{ asset('assets/img/logo.png') }}" alt="Logo In Your Dream" />
             </a>
 
+            <!-- Navigation Menu -->
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/home" class="active">Home</a></li>
                     <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/pricelist" class="active">Pricelist</a></li>
-                    <li><a href="/#about">About Us</a></li>
+                    <li><a href="/pricelist-login">Pricelist</a></li>
+                    <li><a href="/home#about">About Us</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
+
+            <!-- User Dropdown -->
+            <div class="dropdown d-flex align-items-center">
+                <h6 class="user-name me-2">{{ Auth::user()->name }}</h6>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="userMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenuButton">
+                        {{-- <li><a class="dropdown-item" href="/profile">Profile</a></li> --}}
+                        <li class="dropdown">
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <button type="submit" class="dropdown-item">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -54,16 +76,16 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url('{{ asset('assets/img/studio-background.png') }}');">
             <div class="container position-relative">
-                <h1>Pricelist</h1>
+                <h1>Gallery</h1>
                 <p>
                     Home
                     /
-                    Pricelist
+                    Gallery
                 </p>
                 <nav class="breadcrumbs">
                     <ol>
                         <li><a href="/">Home</a></li>
-                        <li class="current">Pricelist</li>
+                        <li class="current">Gallery</li>
                     </ol>
                 </nav>
             </div>

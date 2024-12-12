@@ -49,6 +49,9 @@ class AuthController extends Controller
             'fullname' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:8|confirmed',
+        ], [
+            'password.confirmed' => 'Password tidak cocok.',
+            'password.min' => 'Password minimal 8 karakter.',
         ]);
 
         $user = User::create([

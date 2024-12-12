@@ -84,10 +84,7 @@
                                 <strong>Us</strong>
                             </h2>
                             <p class="opacity-50">
-                                In Your Dream adalah studio foto profesional yang berlokasi di kota Bengkalis, tempat di
-                                mana momen-momen istimewa Anda diabadikan dengan ssepenuh hati. IYD Studio menawarkan
-                                layanan fotografi untuk berbagai keperluan, mulai dari pemotretan pernikahan, potret
-                                pribadi dan keluarga, hingga acara-acara spesial lainnya.
+                                {{ $aboutUs->description }}
                             </p>
                         </div>
                     </div>

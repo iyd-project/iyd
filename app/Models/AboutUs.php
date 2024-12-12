@@ -9,6 +9,8 @@ class AboutUs extends Model
 {
     use HasFactory;
 
+    protected $table = 'aboutus';
+
     protected $fillable = [
         'description',
         'image_path',

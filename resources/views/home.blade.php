@@ -41,7 +41,7 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="/home" class="active">Home</a></li>
-                    <li><a href="/home#services-2">Gallery</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                     <li><a href="/pricelist-login">Pricelist</a></li>
                     <li><a href="/home#about">About Us</a></li>
                 </ul>

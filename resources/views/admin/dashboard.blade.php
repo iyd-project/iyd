@@ -18,7 +18,7 @@
                         <div class="col col-stats ml-3 ml-sm-0">
                             <div class="numbers">
                                 <p class="card-category">Users</p>
-                                <h4 class="card-title">1,294</h4>
+                                <h4 class="card-title">{{ $totalUser }}</h4>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         <div class="col col-stats ml-3 ml-sm-0">
                             <div class="numbers">
                                 <p class="card-category">Reservations</p>
-                                <h4 class="card-title">1303</h4>
+                                <h4 class="card-title">{{ $totalReservation }}</h4>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                         <div class="col col-stats ml-3 ml-sm-0">
                             <div class="numbers">
                                 <p class="card-category">Gallery</p>
-                                <h4 class="card-title">$ 1,345</h4>
+                                <h4 class="card-title">{{ $totalGallery }}</h4>
                             </div>
                         </div>
                     </div>

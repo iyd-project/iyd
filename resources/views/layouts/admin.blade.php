@@ -317,9 +317,17 @@
 
                             <!-- Gallery Menu -->
                             <li class="nav-item {{ request()->is('admin/gallery*') ? 'active' : '' }}">
-                                <a href="{{ route('gallery.index') }}">
+                                <a href="{{ route('admin.gallery.index') }}">
                                     <i class="fas fa-images"></i>
                                     <p>Gallery</p>
+                                </a>
+                            </li>
+
+                            <!-- About Us Menu -->
+                            <li class="nav-item {{ request()->is('admin/aboutus*') ? 'active' : '' }}">
+                                <a href="{{ route('admin.aboutus.index') }}">
+                                    <i class="fas fa-info"></i>
+                                    <p>About Us</p>
                                 </a>
                             </li>
 
