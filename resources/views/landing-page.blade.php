@@ -75,16 +75,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 mb-4 mb-lg-0">
-                            <img src="{{ asset('assets/img/aboutus.png') }}" alt="Image "
-                                class="img-fluid img-overlap" data-aos="zoom-out" />
+                            <img src="{{ asset('assets/img/aboutus.png') }}" alt="Image " class="img-fluid img-overlap"
+                                data-aos="zoom-out" />
                         </div>
                         <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
                             <h2 class="content-title mb-4">
-                                About
+                                About USSSSS
                                 <strong>Us</strong>
                             </h2>
                             <p class="opacity-50">
-                                {{ $aboutUs->description }}
                             </p>
                         </div>
                     </div>
@@ -105,10 +104,7 @@
             <div class="services-carousel-wrap">
                 <div class="container">
                     <div class="swiper init-swiper">
-                        <script
-                                type="application/json"
-                                class="swiper-config"
-                            >
+                        <script type="application/json" class="swiper-config">
                                 {
                                     "loop": true,
                                     "speed": 600,
